@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale =1">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <form id="f1" name="f1">
+      <tr>
+        <td colspan="4"> <input type="text" class="text" name="ans" id="ans"> </td>
+      </tr>
+    <table>
+      <tr>
+        <td><input type="button" class="button gray symbol" value="√" onclick="f1.ans.value = Math.sqrt(f1.ans.value)"></td>
+        <td><input type="button" class="button gray symbol" value="x²"onclick="f1.ans.value *= f1.ans.value"></td>
+        <td><input type="button" class="button gray symbol" value="C" onclick="f1.ans.value = f1.ans.value.slice(0,-1)"></td>
+        <td><input type="button" class="button gray symbol" value="+" onclick="f1.ans.value += '+'"></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="button gray number" value="7" onclick="f1.ans.value += 7"></td>
+        <td><input type="button" class="button gray number" value="8" onclick="f1.ans.value += 8"></td>
+        <td><input type="button" class="button gray number" value="9" onclick="f1.ans.value += 9"></td>
+        <td><input type="button" class="button gray symbol" value="-" onclick="f1.ans.value += '-'"></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="button gray number" value="4" onclick="f1.ans.value += 4"></td>
+        <td><input type="button" class="button gray number" value="5" onclick="f1.ans.value += 5"></td>
+        <td><input type="button" class="button gray number" value="6" onclick="f1.ans.value += 6"></td>
+        <td><input type="button" class="button gray symbol" value="x" onclick="f1.ans.value += '*'"></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="button gray number" value="1" onclick="f1.ans.value +=1"></td>
+        <td><input type="button" class="button gray number" value="2" onclick="f1.ans.value +=2"></td>
+        <td><input type="button" class="button gray number" value="3" onclick="f1.ans.value +=3"></td>
+        <td><input type="button" class="button gray symbol" value="/"onclick="f1.ans.value += '/'"></td>
+      </tr>
+      <tr>
+        <td><input type="button" class="button gray number" value="0" onclick="f1.ans.value += 0"></td>
+        <td><input type="button" class="button gray number" value="00" onclick="f1.ans.value += 00"></td>
+        <td><input type="button" class="button gray symbol" value="." onclick="f1.ans.value += '.'"></td>
+        <td><input type="button" class="button gray symbol" value="=" onclick="f1.ans.value = eval(f1.ans.value)"></td>
+      </tr>
+    </table>
+  </div>
+  </form>
+</body>
+
+</html>

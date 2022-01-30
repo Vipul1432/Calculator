@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.button {
+  width: 75px;
+  height: 50px;
+  font-size: 25px;
+  margin: 2px;
+  cursor: pointer;
+  border: none;
+}
+
+.text {
+  width: 305px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 25px;
+  border: none;
+  background-color: transparent;
+}
+
+.main {
+  width: 327px;
+  height: 332px;
+  background-color: #efecec
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(.50%).translateY(.50%);
+  border: 1px solid gray;
+}
+/*  */
+.symbol{
+  font-weight: bold;
+}
+
+.number {
+  font-weight: bold;
+}
+.gray:hover {
+  background-color: #3F4F93;
+}
